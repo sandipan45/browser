@@ -11,6 +11,7 @@ const $ = require("jquery")
 
 export const onInitialClientRender = () => {
   $.getJSON('https://ipapi.co/json/', function(data){
+	console.log("browser.render data", data);
     $("#ipaddress").html(data.ip);
 	$("#country").html(data.country_name);
 	$("#city").html(data.city);
