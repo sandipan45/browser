@@ -11,11 +11,11 @@ const $ = require("jquery")
 
 export const onInitialClientRender = () => {
   $.getJSON('https://ipapi.co/json/', function(data){
-    $("#ipaddress").html(data.query);
-	$("#country").html(data.country);
+    $("#ipaddress").html(data.ip);
+	$("#country").html(data.country_name);
 	$("#city").html(data.city);
-	$("#zip").html(data.zip);
-	$("#isp").html(data.isp);
+	$("#zip").html(data.postal);
+	$("#isp").html(data.org);
 	$("#timezone").html(data.timezone);
   });
   
