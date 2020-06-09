@@ -5,3 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
+
+const $ = require("jquery")
+
+export const onInitialClientRender = () => {
+  $.getJSON('https://api.ipify.org?format=json', function(data){
+    console.log(data.ip);
+});
+}
