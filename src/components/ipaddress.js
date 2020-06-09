@@ -25,7 +25,7 @@ fetch('http://freegeoip.net/json/')
 render() {
 return (
 <div>
-<button onClick = {this.setStateHandler}>Click</button>
+<button onClick = {this.setStateHandler}>Get IP</button>
 <h2>{this.state.data}</h2>
 </div>
 );

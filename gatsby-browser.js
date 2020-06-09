@@ -10,7 +10,13 @@
 const $ = require("jquery")
 
 export const onInitialClientRender = () => {
-  $.getJSON('https://api.ipify.org?format=json', function(data){
-    console.log(data.ip);
-});
+  $.getJSON('http://ip-api.com/json', function(data){
+    $("#ipaddress").html(data.query);
+	$("#country").html(data.country);
+	$("#city").html(data.city);
+	$("#zip").html(data.zip);
+	$("#isp").html(data.isp);
+	$("#timezone").html(data.timezone);
+  });
+  
 }

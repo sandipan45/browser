@@ -9,15 +9,12 @@ import App from "../components/ipaddress"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-	<App/>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <div>Ip Address: <span id="ipaddress"></span></div>
+	<div>Country: <span id="country"></span></div>
+	<div>City: <span id="city"></span></div>
+	<div>Zip/Postal Code: <span id="zip"></span></div>
+	<div>ISP: <span id="isp"></span></div>
+	<div>Timezone: <span id="timezone"></span></div>
   </Layout>
 )
 
