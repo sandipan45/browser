@@ -10,7 +10,7 @@
 const $ = require("jquery")
 
 export const onInitialClientRender = () => {
-  $.getJSON('http://ip-api.com/json', function(data){
+  $.getJSON('https://ipapi.co/json/', function(data){
     $("#ipaddress").html(data.query);
 	$("#country").html(data.country);
 	$("#city").html(data.city);
