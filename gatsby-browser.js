@@ -22,7 +22,7 @@ export const onInitialClientRender = () => {
   
 	$(document).ready(function () {
 		var instance = $.fn.deviceDetector;
-		console.log(instance.getInfo());
+		//console.log(instance.getInfo());
 		$("#isAandroid").html(instance.getInfo().android);
 		$("#isBlackberry").html(instance.getInfo().blackberry);
 		$("#isDesktop").html(instance.getInfo().desktop);
