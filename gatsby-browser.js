@@ -20,7 +20,6 @@ export const onInitialClientRender = () => {
 	$("#timezone").html(data.timezone);
   });
   
-	$(document).ready(function () {
 		var instance = $.fn.deviceDetector;
 		//console.log(instance.getInfo());
 		$("#isAandroid").html(instance.getInfo().android);
@@ -50,5 +49,4 @@ export const onInitialClientRender = () => {
 		$("#isSafari").html(instance.getInfo().safari);
 		$("#isWindows").html(instance.getInfo().windows);
 		$("#isWindowsPhone").html(instance.getInfo().windowsPhone);
-	});
 }
