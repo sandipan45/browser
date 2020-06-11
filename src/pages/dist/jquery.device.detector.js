@@ -1,19 +1,7 @@
 import jQuery from 'jquery'
-/**
- * @fileOverview device detector
-  jQuery Plugin to get Device and Browser informations
- * @author Simon Gattner <npm@0x38.de>
- * @license MIT
- * @version 1.0.0
- */
 
-/**
- * @external "jQuery.fn"
- * @see {@link http://docs.jquery.com/Plugins/Authoring The jQuery Plugin Guide}
- */
 
 (function($) {
-  'use strict';
   /**
    * jQuery Methods to get Device and Browser informations
    * @function external:"jQuery.fn".deviceDetector
