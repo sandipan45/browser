@@ -49,8 +49,8 @@ export const onInitialClientRender = () => {
 		
 		//extra code to display the values in html
 		var display = "";
-		for(var key in data) {
-			if (key != "")
+		for(key in data) {
+			if (key !== "")
 			display += "<div>" + key + " : <span class='valueRed'>" + data[key] + "</span></div>";
 		}
 		document.getElementById("dump").innerHTML =  display;  
