@@ -13,6 +13,7 @@ console.log(device);
 const IndexPage = (data) => (
   <Layout>
     <SEO title="Home" />
+	<h4>General Data::</h4>
     <div>Ip Address: <span id="ipaddress" className="valueRed"></span></div>
 	<div>Country: <span className="valueRed" id="country"></span></div>
 	<div>City: <span className="valueRed" id="city"></span></div>
@@ -23,7 +24,7 @@ const IndexPage = (data) => (
 	<h4>Header Data::</h4>
 	<div id="dump"></div>
 	<p>&nbsp;</p>
-	<h4>Device Track Another::</h4>
+	<h4>Device Tracking Data::</h4>
 	<div>Browser: <span className="valueRed">{device.client.name}</span></div>
 	<div>Browser Version: <span className="valueRed">{device.client.version}</span></div>
 	<div>Device Type: <span className="valueRed">{device.device.type}</span></div>
