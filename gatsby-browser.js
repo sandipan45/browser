@@ -51,7 +51,24 @@ export const onInitialClientRender = () => {
 		var display = "";
 		for(key in data) {
 			if (key !== "")
-			display += "<div>" + key + " : <span class='valueRed'>" + data[key] + "</span></div>";
+			display += "<tr><th scope='row'>" + key + ":</th> <td class='valueRed'>" + data[key] + "</td></tr>";
 		}
-		document.getElementById("dump").innerHTML =  display;  
+		document.getElementById("dump").innerHTML =  display; 
+
+		function get_cookies_array() {
+			var cookies = { };
+			if (document.cookie && document.cookie != '') {
+				var split = document.cookie.split(';');
+				for (var i = 0; i < split.length; i++) {
+					var name_value = split[i].split("=");
+					name_value[0] = name_value[0].replace(/^ /, '');
+					cookies[decodeURIComponent(name_value[0])] = decodeURIComponent(name_value[1]);
+				}
+			}
+			return cookies;		   
+		}
+		var cookies = get_cookies_array();
+		console.log(cookies);
+		
+
 }

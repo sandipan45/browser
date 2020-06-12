@@ -8,32 +8,141 @@ import DeviceDetector from "device-detector-js";
 const deviceDetector = new DeviceDetector();
 const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36";
 const device = deviceDetector.parse(userAgent);
-console.log(device);
+//console.log(device);
 
 const IndexPage = (data) => (
   <Layout>
     <SEO title="Home" />
-	<h4>General Data::</h4>
-    <div>Ip Address: <span id="ipaddress" className="valueRed"></span></div>
-	<div>Country: <span className="valueRed" id="country"></span></div>
-	<div>City: <span className="valueRed" id="city"></span></div>
-	<div>Zip/Postal Code: <span className="valueRed" id="zip"></span></div>
-	<div>ISP: <span className="valueRed" id="isp"></span></div>
-	<div>Timezone: <span className="valueRed" id="timezone"></span></div>
-	<p>&nbsp;</p>
-	<h4>Header Data::</h4>
-	<div id="dump"></div>
-	<p>&nbsp;</p>
-	<h4>Device Tracking Data::</h4>
-	<div>Browser: <span className="valueRed">{device.client.name}</span></div>
-	<div>Browser Version: <span className="valueRed">{device.client.version}</span></div>
-	<div>Device Type: <span className="valueRed">{device.device.type}</span></div>
-	<div>Device Barnd: <span className="valueRed">{device.device.brand}</span></div>
-	<div>Device Model: <span className="valueRed">{device.device.model}</span></div>
-	<div>Os Name: <span className="valueRed">{device.os.name}</span></div>
-	<div>Os Version: <span className="valueRed">{device.os.version}</span></div>
-	<div>Os Platform: <span className="valueRed">{device.os.platform}</span></div>
-	<div>BOT: <span className="valueRed">{device.bot}</span></div>
+	
+	
+		<table class="table table-bordered w3-table-all">
+  <thead>
+    <tr>
+       <th colspan="2" scope="row">
+	   <td align="center">General Data</td>
+
+	  </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Ip Address :</th>
+      <td id="ipaddress" className="valueRed"></td>
+    </tr>
+    <tr>
+      <th scope="row">Country :</th>
+      <td className="valueRed" id="country"></td>
+    </tr>
+    <tr>
+      <th scope="row">City :</th>
+      <td className="valueRed" id="city"></td>
+    </tr>
+    <tr>
+      <th scope="row">Zip/Postal Code :</th>
+      <td className="valueRed" id="zip"></td>
+    </tr>
+    <tr>
+      <th scope="row">ISP :</th>
+      <td className="valueRed" id="isp"></td>
+    </tr>
+    <tr>
+      <th scope="row">Timezone :</th>
+      <td className="valueRed" id="timezone"></td>
+    </tr>
+  </tbody>
+</table>
+	
+
+	
+	
+	
+		<table class="table table-bordered w3-table-all">
+  <thead>
+    <tr>
+       <th colspan="2" scope="row">
+      <td align="center">Header Data</td>
+	  </th>
+    </tr>
+  </thead>
+  <tbody id="dump">
+  </tbody>
+</table>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+		<table class="table table-bordered w3-table-all">
+  <thead>
+    <tr>
+       <th colspan="2" scope="row">
+      <td align="center">Device Tracking Data</td>
+	  </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Browser:</th>
+      <td className="valueRed">{device.client.name}</td>
+    </tr>
+    <tr>
+      <th scope="row">Browser Version:</th>
+      <td className="valueRed">{device.client.version}</td>
+    </tr>
+    <tr>
+      <th scope="row">Device Type:</th>
+      <td className="valueRed">{device.device.type}</td>
+    </tr>
+    <tr>
+      <th scope="row">Device Barnd:</th>
+      <td className="valueRed">{device.device.brand}</td>
+    </tr>
+    <tr>
+      <th scope="row">Device Model:</th>
+      <td className="valueRed">{device.device.model}</td>
+    </tr>
+    <tr>
+      <th scope="row">Os Name:</th>
+      <td className="valueRed">{device.os.name}</td>
+    </tr>
+    <tr>
+      <th scope="row">Os Version:</th>
+      <td className="valueRed">{device.os.version}</td>
+    </tr>
+    <tr>
+      <th scope="row">Os Platform:</th>
+      <td className="valueRed">{device.os.platform}</td>
+    </tr>
+    <tr>
+      <th scope="row">BOT:</th>
+      <td className="valueRed">{device.bot}</td>
+    </tr>
+  </tbody>
+</table>
+	
+
+	
+	<div id="cookieData"></div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   </Layout>
 )
 
