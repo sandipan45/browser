@@ -26,8 +26,8 @@ const IndexPage = (data) => (
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Ip Address :</th>
-      <td id="ipaddress" className="valueRed"></td>
+      <th width="35%" scope="row">Ip Address :</th>
+      <td width="65%" id="ipaddress" className="valueRed"></td>
     </tr>
     <tr>
       <th scope="row">Country :</th>
@@ -87,8 +87,8 @@ const IndexPage = (data) => (
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Browser:</th>
-      <td className="valueRed">{device.client.name}</td>
+      <th width="35%" scope="row">Browser:</th>
+      <td width="65%" className="valueRed">{device.client.name}</td>
     </tr>
     <tr>
       <th scope="row">Browser Version:</th>

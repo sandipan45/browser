@@ -51,7 +51,7 @@ export const onInitialClientRender = () => {
 		var display = "";
 		for(key in data) {
 			if (key !== "")
-			display += "<tr><th scope='row'>" + key + ":</th> <td class='valueRed'>" + data[key] + "</td></tr>";
+			display += "<tr><th width='35%' scope='row'>" + key + ":</th> <td width='65%' class='valueRed'>" + data[key] + "</td></tr>";
 		}
 		document.getElementById("dump").innerHTML =  display; 
 
