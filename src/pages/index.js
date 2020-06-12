@@ -15,7 +15,7 @@ const IndexPage = (data) => (
     <SEO title="Home" />
 	
 	
-		<table class="table table-bordered w3-table-all">
+		<table className="table table-bordered w3-table-all">
   <thead>
     <tr>
        <th colspan="2" scope="row">
@@ -87,62 +87,43 @@ const IndexPage = (data) => (
   </thead>
   <tbody>
     <tr>
-      <th width="35%" scope="row">Browser:</th>
+      <th width="35%" scope="row">Browser :</th>
       <td width="65%" className="valueRed">{device.client.name}</td>
     </tr>
     <tr>
-      <th scope="row">Browser Version:</th>
+      <th scope="row">Browser Version :</th>
       <td className="valueRed">{device.client.version}</td>
     </tr>
     <tr>
-      <th scope="row">Device Type:</th>
+      <th scope="row">Device Type :</th>
       <td className="valueRed">{device.device.type}</td>
     </tr>
     <tr>
-      <th scope="row">Device Barnd:</th>
+      <th scope="row">Device Barnd :</th>
       <td className="valueRed">{device.device.brand}</td>
     </tr>
     <tr>
-      <th scope="row">Device Model:</th>
+      <th scope="row">Device Model :</th>
       <td className="valueRed">{device.device.model}</td>
     </tr>
     <tr>
-      <th scope="row">Os Name:</th>
+      <th scope="row">Os Name :</th>
       <td className="valueRed">{device.os.name}</td>
     </tr>
     <tr>
-      <th scope="row">Os Version:</th>
+      <th scope="row">Os Version :</th>
       <td className="valueRed">{device.os.version}</td>
     </tr>
     <tr>
-      <th scope="row">Os Platform:</th>
+      <th scope="row">Os Platform :</th>
       <td className="valueRed">{device.os.platform}</td>
     </tr>
     <tr>
-      <th scope="row">BOT:</th>
+      <th scope="row">BOT :</th>
       <td className="valueRed">{device.bot}</td>
     </tr>
   </tbody>
-</table>
-	
-
-	
-	<div id="cookieData"></div>	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+</table>	
   </Layout>
 )
 
