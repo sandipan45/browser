@@ -56,7 +56,7 @@ const IndexPage = (data) => (
 	
 	
 	
-		<table class="table table-bordered w3-table-all">
+		<table className="table table-bordered w3-table-all">
   <thead>
     <tr>
        <th colspan="2" scope="row">
@@ -77,7 +77,7 @@ const IndexPage = (data) => (
 	
 	
 	
-		<table class="table table-bordered w3-table-all">
+		<table className="table table-bordered w3-table-all">
   <thead>
     <tr>
        <th colspan="2" scope="row">
