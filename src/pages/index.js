@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
 
-console.log(window.innerWidth);
+//console.log(DeviceInfo);
 
 const IndexPage = (data) => (
   <Layout>
@@ -242,11 +242,11 @@ const IndexPage = (data) => (
     </tr>
 	<tr>
       <th scope="row">Screen Width :</th>
-      <td className="valueRed">{window.innerWidth}</td>
+      <td className="valueRed"></td>
     </tr>
 	<tr>
       <th scope="row">Screen Height :</th>
-      <td className="valueRed">{window.innerHeight}</td>
+      <td className="valueRed"></td>
     </tr>
   </tbody>
 </table>	
