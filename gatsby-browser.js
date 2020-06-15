@@ -54,21 +54,17 @@ export const onInitialClientRender = () => {
 			display += "<tr><th width='35%' scope='row'>" + key + " :</th> <td width='65%' class='valueRed'>" + data[key] + "</td></tr>";
 		}
 		document.getElementById("dump").innerHTML =  display; 
-
-		function get_cookies_array() {
-			var cookies = { };
-			if (document.cookie && document.cookie != '') {
-				var split = document.cookie.split(';');
-				for (var i = 0; i < split.length; i++) {
-					var name_value = split[i].split("=");
-					name_value[0] = name_value[0].replace(/^ /, '');
-					cookies[decodeURIComponent(name_value[0])] = decodeURIComponent(name_value[1]);
-				}
-			}
-			return cookies;		   
-		}
-		var cookies = get_cookies_array();
-		//console.log(cookies);
 		
+	var winW = window.innerWidth;
+	var winH = window.innerHeight;
+	var pyth = (winW*winW)+(winH*winH);
+	var diag = Math.round(Math.sqrt(pyth)/72*10)/10; 
+
+	document.getElementById("innerWidth").innerHTML =  winH+'px'; 
+	document.getElementById("innerHeight").innerHTML =  winH+'px';
+	document.getElementById("diagonalScreen").innerHTML =  Math.round(winW/72*10)/10+'" Width<br>'+ Math.round(winH/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
+	var bitDepth = window.screen.colorDepth;
+	document.getElementById("screenColorDepth").innerHTML =  bitDepth; 
+
 
 }

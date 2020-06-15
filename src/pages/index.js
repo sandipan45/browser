@@ -4,9 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import * as rdd from 'react-device-detect'
+import { devicePixelRatioDetector } from 'device-pixel-ratio-detector'
 
-
-//console.log(DeviceInfo);
+const detector = new devicePixelRatioDetector()
+//console.log(detector);
 
 const IndexPage = (data) => (
   <Layout>
@@ -242,11 +243,23 @@ const IndexPage = (data) => (
     </tr>
 	<tr>
       <th scope="row">Screen Width :</th>
-      <td className="valueRed"></td>
+      <td className="valueRed" id="innerWidth"></td>
     </tr>
 	<tr>
       <th scope="row">Screen Height :</th>
-      <td className="valueRed"></td>
+      <td className="valueRed" id="innerHeight"></td>
+    </tr>
+	<tr>
+      <th scope="row">Diagonal Screen Size :</th>
+      <td className="valueRed" id="diagonalScreen"></td>
+    </tr>
+	<tr>
+      <th scope="row">Device Pixel Ratio :</th>
+      <td className="valueRed">{detector.matchMediaMax.media}</td>
+    </tr>
+	<tr>
+      <th scope="row">Screen Color Depth :</th>
+      <td className="valueRed" id="screenColorDepth"></td>
     </tr>
   </tbody>
 </table>	
