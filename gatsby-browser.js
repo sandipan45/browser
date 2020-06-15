@@ -8,7 +8,6 @@
 
 
 const $ = require("jquery")
-const initialState = typeof window !== "undefined" && window && window.INITIAL_STATE
 
 export const onInitialClientRender = () => {
   $.getJSON('https://ipapi.co/json/', function(data){
@@ -58,14 +57,7 @@ export const onInitialClientRender = () => {
 	
 
 	 
-	var winW = $(window).width();
-	var winH = $(window).height();
-	var pyth = (winW*winW)+(winH*winH);
-	var diag = Math.round(Math.sqrt(pyth)/72*10)/10; 
-
-	document.getElementById("innerWidth").innerHTML =  winH+'px'; 
-	document.getElementById("innerHeight").innerHTML =  winH+'px';
-	document.getElementById("diagonalScreen").innerHTML =  Math.round(winW/72*10)/10+'" Width<br>'+ Math.round(winH/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
+	
 
 
 

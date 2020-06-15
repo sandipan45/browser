@@ -5,9 +5,11 @@ import SEO from "../components/seo"
 
 import * as rdd from 'react-device-detect'
 import { devicePixelRatioDetector } from 'device-pixel-ratio-detector'
+import { detect, devices } from 'detect-devices'
+
 
 const detector = new devicePixelRatioDetector()
-//console.log(detector);
+console.log(devices)
 
 const IndexPage = (data) => (
   <Layout>
@@ -255,7 +257,7 @@ const IndexPage = (data) => (
     </tr>
 	<tr>
       <th scope="row">Device Pixel Ratio :</th>
-      <td className="valueRed">{detector.matchMediaMax.media}</td>
+      <td className="valueRed"></td>
     </tr>
 
   </tbody>
