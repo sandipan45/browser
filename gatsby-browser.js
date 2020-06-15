@@ -68,7 +68,7 @@ export const onInitialClientRender = () => {
 			return cookies;		   
 		}
 		var cookies = get_cookies_array();
-		console.log(cookies);
+		//console.log(cookies);
 		
 
 }
