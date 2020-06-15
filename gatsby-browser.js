@@ -8,6 +8,7 @@
 
 
 const $ = require("jquery")
+const initialState = typeof window !== "undefined" && window && window.INITIAL_STATE
 
 export const onInitialClientRender = () => {
   $.getJSON('https://ipapi.co/json/', function(data){
@@ -54,7 +55,9 @@ export const onInitialClientRender = () => {
 			display += "<tr><th width='35%' scope='row'>" + key + " :</th> <td width='65%' class='valueRed'>" + data[key] + "</td></tr>";
 		}
 		document.getElementById("dump").innerHTML =  display; 
-		
+	
+
+	 
 	var winW = window.innerWidth;
 	var winH = window.innerHeight;
 	var pyth = (winW*winW)+(winH*winH);
@@ -63,6 +66,8 @@ export const onInitialClientRender = () => {
 	document.getElementById("innerWidth").innerHTML =  winH+'px'; 
 	document.getElementById("innerHeight").innerHTML =  winH+'px';
 	document.getElementById("diagonalScreen").innerHTML =  Math.round(winW/72*10)/10+'" Width<br>'+ Math.round(winH/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
+	var bitDepth = window.screen.colorDepth;
+	document.getElementById("screenColorDepth").innerHTML =  bitDepth; 
 
 
 }
