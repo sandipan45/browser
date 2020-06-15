@@ -63,8 +63,6 @@ export const onInitialClientRender = () => {
 	document.getElementById("innerWidth").innerHTML =  winH+'px'; 
 	document.getElementById("innerHeight").innerHTML =  winH+'px';
 	document.getElementById("diagonalScreen").innerHTML =  Math.round(winW/72*10)/10+'" Width<br>'+ Math.round(winH/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
-	var bitDepth = window.screen.colorDepth;
-	document.getElementById("screenColorDepth").innerHTML =  bitDepth; 
 
 
 }
