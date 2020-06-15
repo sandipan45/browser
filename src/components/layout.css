@@ -632,6 +632,8 @@ pre tt:after {
 .table-bordered td, .table-bordered th {
 	border: 1px solid #dee2e6;
 	font-family: poppins;
+	text-transform: capitalize;
+	
 }
 
 /*!

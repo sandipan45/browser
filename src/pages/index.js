@@ -99,7 +99,7 @@ const IndexPage = (data) => (
       <td className="valueRed">{device.device.type}</td>
     </tr>
     <tr>
-      <th scope="row">Device Barnd :</th>
+      <th scope="row">Barnd :</th>
       <td className="valueRed">{device.device.brand}</td>
     </tr>
     <tr>
