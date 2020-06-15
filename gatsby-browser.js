@@ -58,16 +58,15 @@ export const onInitialClientRender = () => {
 	
 
 	 
-	var winW = window.innerWidth;
-	var winH = window.innerHeight;
+	var winW = $(window).width();
+	var winH = $(window).height();
 	var pyth = (winW*winW)+(winH*winH);
 	var diag = Math.round(Math.sqrt(pyth)/72*10)/10; 
 
 	document.getElementById("innerWidth").innerHTML =  winH+'px'; 
 	document.getElementById("innerHeight").innerHTML =  winH+'px';
 	document.getElementById("diagonalScreen").innerHTML =  Math.round(winW/72*10)/10+'" Width<br>'+ Math.round(winH/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
-	var bitDepth = window.screen.colorDepth;
-	document.getElementById("screenColorDepth").innerHTML =  bitDepth; 
+
 
 
 }

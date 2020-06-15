@@ -257,10 +257,7 @@ const IndexPage = (data) => (
       <th scope="row">Device Pixel Ratio :</th>
       <td className="valueRed">{detector.matchMediaMax.media}</td>
     </tr>
-	<tr>
-      <th scope="row">Screen Color Depth :</th>
-      <td className="valueRed" id="screenColorDepth"></td>
-    </tr>
+
   </tbody>
 </table>	
   </Layout>
