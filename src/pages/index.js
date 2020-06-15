@@ -1,10 +1,12 @@
-import React from "react"
+import React from 'react'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import * as rdd from 'react-device-detect'
-console.log(rdd);
+
+
+console.log(window.innerWidth);
 
 const IndexPage = (data) => (
   <Layout>
@@ -237,6 +239,14 @@ const IndexPage = (data) => (
 	<tr>
       <th scope="row">Os Version :</th>
       <td className="valueRed">{rdd.osVersion}</td>
+    </tr>
+	<tr>
+      <th scope="row">Screen Width :</th>
+      <td className="valueRed">{window.innerWidth}</td>
+    </tr>
+	<tr>
+      <th scope="row">Screen Height :</th>
+      <td className="valueRed">{window.innerHeight}</td>
     </tr>
   </tbody>
 </table>	
