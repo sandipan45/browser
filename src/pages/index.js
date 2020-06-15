@@ -5,11 +5,10 @@ import SEO from "../components/seo"
 
 import * as rdd from 'react-device-detect'
 import { devicePixelRatioDetector } from 'device-pixel-ratio-detector'
-import { detect, devices } from 'detect-devices'
 
 
 const detector = new devicePixelRatioDetector()
-console.log(devices)
+//console.log(useScreen);
 
 const IndexPage = (data) => (
   <Layout>

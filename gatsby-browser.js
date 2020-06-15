@@ -54,11 +54,5 @@ export const onInitialClientRender = () => {
 			display += "<tr><th width='35%' scope='row'>" + key + " :</th> <td width='65%' class='valueRed'>" + data[key] + "</td></tr>";
 		}
 		document.getElementById("dump").innerHTML =  display; 
-	
-
-	 
-	
-
-
 
 }
